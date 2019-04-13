@@ -1,0 +1,6 @@
+com\danielpertuz\wordpress\resource\ResourcePosts.class
+com\danielpertuz\wordpress\service\ServicioUsuarios.class
+com\danielpertuz\wordpress\service\ServicioPosts.class
+com\danielpertuz\wordpress\modelo\Usuarios.class
+com\danielpertuz\wordpress\modelo\Posts.class
+com\danielpertuz\wordpress\resource\ResourceUsuarios.class
