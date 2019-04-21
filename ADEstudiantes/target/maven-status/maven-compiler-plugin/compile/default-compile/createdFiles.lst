@@ -1,0 +1,8 @@
+com\nextu\android\dao\DaoEstudiante.class
+com\nextu\android\entidades\Persona.class
+com\nextu\android\dao\DaoPersona.class
+com\nextu\android\dao\IDAO.class
+com\nextu\android\dao\Conexion.class
+com\nextu\android\entidades\Estudiante.class
+com\nextu\android\recursos\RecursoEstudiante.class
+com\nextu\android\recursos\RecursoPersona.class
