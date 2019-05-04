@@ -1,0 +1,10 @@
+com\danielpertuz\evaluacion\resource\ResourceUsuario.class
+com\danielpertuz\evaluacion\servicio\ServicioUsuario.class
+com\danielpertuz\evaluacion\servicio\ServicioAsignatura.class
+com\danielpertuz\evaluacion\servicio\ServicioTarea.class
+com\danielpertuz\evaluacion\modelo\Usuario.class
+com\danielpertuz\evaluacion\modelo\Asignatura.class
+com\danielpertuz\evaluacion\modelo\Conexion.class
+com\danielpertuz\evaluacion\resource\ResourceAsignatura.class
+com\danielpertuz\evaluacion\resource\ResourceTarea.class
+com\danielpertuz\evaluacion\modelo\Tarea.class
