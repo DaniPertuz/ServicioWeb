@@ -1,0 +1,55 @@
+//Código para hallar una palabra en un arreglo diccionario dado
+
+public static String WordSplit(String[] strArr) {
+    // code goes here  
+    int a = 0;
+    String b = "", c = "";
+    System.out.println(strArr[1]);
+    String aux[] = strArr[1].split(",");
+    for(int i = 0; i < aux.length; i++){
+      for(int j = 0; j < aux.length; j++){
+        String str = aux[i] + aux[j];
+        if (str.equals(strArr[0])) {
+          b = aux[i];
+          c = aux[j];
+        }
+      }
+    }
+    return (b + ", " + c);
+  }
+  
+  //Código para contraseñas
+  
+  public static boolean containsIgnoreCase(String s, String subString) {
+        return s.toLowerCase().contains(subString.toLowerCase());
+    }
+
+  public static String SimplePassword(String str) {
+    // code goes here
+    boolean aux = true;
+    int sum = 0;
+    for (int i = 0; i < str.length(); i++) {
+      if (Integer.valueOf(str.charAt(i)) > 64 && Integer.valueOf(str.charAt(i)) < 91) {
+        sum++;
+      }
+    }
+    
+    if ((str.length() > 7 && str.length() < 31) && !containsIgnoreCase(str, "Password")
+    && (str.contains("0") || str.contains("1") || str.contains("2")
+    || str.contains("3") || str.contains("4") || str.contains("5") || str.contains("6")
+    || str.contains("7") || str.contains("8") || str.contains("9")
+    || str.contains("!") || str.contains("=") || str.contains("@")
+    || str.contains("[") || str.contains("]") || str.contains("*")
+    || str.contains("+") || str.contains("-") || str.contains("_")
+    || str.contains(".") || str.contains(",") || str.contains("^")
+    || str.contains("¡") || str.contains("?") || str.contains("|")
+    || str.contains("{") || str.contains("}") || str.contains("%")
+    || str.contains("$") || str.contains("#") || str.contains("/")
+    || str.contains("&") || str.contains("(") || str.contains(")")) && sum > 0) {
+      aux = true;
+    } else {
+      aux = false;
+    }
+    
+    return String.valueOf(aux);
+  }
