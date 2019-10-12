@@ -53,3 +53,28 @@ public static String WordSplit(String[] strArr) {
     
     return String.valueOf(aux);
   }
+  
+  //Contar letras únicas de un string dado
+  
+  public static int counting(String str){
+    int count = 0;
+    for(int i=0; i<str.length(); i++){
+        if(str.indexOf(str.charAt(i)) == i){
+            count++;
+        }
+    }
+    return count;
+}
+  public static void main(String[] args) {
+    String str = "ahyjakh";
+    int aux = 0;
+    for(int i=0; i<str.length(); i++){
+        for(int j=i+1; j<str.length(); j++){
+            if(str.charAt(i) == str.charAt(j) && j-i>1){
+                int cont = counting(str.substring(i+1, j));
+                aux = aux >= cont ? aux : cont;
+            }
+        }
+    }
+    System.out.println(aux);
+  }
